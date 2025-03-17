@@ -13,6 +13,9 @@ export default function Header() {
                     <NavLink to={"/"} style={{ margin: "15px" }}
                     className={({isActive,isPending})=>(isActive?"text-danger":"")}
                     >Home</NavLink>
+                    <NavLink to={"/Login"} style={{ margin: "15px" }}
+                    className={({isActive,isPending})=>(isActive?"text-danger":"")}
+                    >Login</NavLink>
                     </Nav>
                 </Container>
             </Navbar>
