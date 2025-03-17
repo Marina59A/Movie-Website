@@ -1,8 +1,13 @@
-
-export default function Home(){
-    return(
+import "./home.css";
+export default function Home() {
+    return (
         <>
-        <h1>Home Page</h1>
+            <div className="home">
+                <input className="input"
+                    type="text" placeholder="Enter Your Email" />
+                <button style={{ marginLeft: "10px" }}
+                    className="btn btn-danger">Get Started</button>
+            </div>
         </>
     )
 }
