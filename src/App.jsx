@@ -3,20 +3,29 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home/home'
 import Header from './components/Header/header'
 import Login from './components/Login/login'
-// import './App.css'
+import MoviePage from './Pages/Movies/movie'
+import MovieDetails from './Pages/Movies/movieDetails'
+import Favorites from './components/Favourites/Favorites'
+import { Provider } from 'react-redux'
+import store from './Store/Slices/store'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <BrowserRouter>
+    <Provider store={store}>
+    <BrowserRouter>
       <Header />
         <Routes>
         <Route index element={<Home />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/movie' element={<MoviePage />} />
+        <Route path='/movieDetails/:movieID' element={<MovieDetails />} />
+        <Route path="/Favorites" element={<Favorites />} />
+
         </Routes>
       </BrowserRouter>
+    </Provider>
+      
     </>
   )
 }
