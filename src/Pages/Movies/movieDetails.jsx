@@ -30,17 +30,17 @@ export default function MovieDetails() {
             {/* <p>id is {movieID}</p> */}
             <Row>
                 <Col md={3}>
-                <Card.Img style={{ width: '100%', borderRadius: '10px' }}
-                 src={`${imageBaseUrl}${movie.poster_path}`} />
+                    <Card.Img style={{ width: '100%', borderRadius: '10px' }}
+                        src={`${imageBaseUrl}${movie.poster_path}`} />
                 </Col>
                 <Col md={9}>
-                <Card.Body >
-                    <Card.Title>{movie.title}</Card.Title>
-                    <Card.Text>
-                        {movie.overview}
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+                    <Card.Body >
+                        <Card.Title>{movie.title}</Card.Title>
+                        <Card.Text>
+                            {movie.overview}
+                        </Card.Text>
+                        <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
                 </Col>
             </Row>
         </Container>

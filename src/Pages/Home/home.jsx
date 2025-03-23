@@ -7,8 +7,8 @@ export default function Home() {
                 <input className="input"
                     type="text" placeholder="Enter Your Email" />
                 <button style={{ marginLeft: "10px" }}
-                    className="btn btn-danger" 
-                    >Get Started</button>
+                    className="btn btn-danger"
+                >Get Started</button>
             </div>
         </>
     )
